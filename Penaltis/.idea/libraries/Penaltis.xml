@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Penaltis">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/Penaltis.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

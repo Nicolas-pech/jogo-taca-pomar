@@ -1,0 +1,481 @@
+{
+  "temporadas": [
+    {
+      "temporadaId": 2,
+      "ano": 2027,
+      "partidas": [
+        {
+          "temporadaId": 2,
+          "grupoId": 1,
+          "grupoNome": "A",
+          "rodada": 1,
+          "timeAId": 1,
+          "timeANome": "Godoiense ",
+          "timeBId": 4,
+          "timeBNome": "Atlântico",
+          "status": "FINALIZADO",
+          "vencedorId": 4
+        },
+        {
+          "temporadaId": 2,
+          "grupoId": 1,
+          "grupoNome": "A",
+          "rodada": 1,
+          "timeAId": 2,
+          "timeANome": "Caxias ",
+          "timeBId": 3,
+          "timeBNome": "Pumas ",
+          "status": "FINALIZADO",
+          "vencedorId": 3
+        },
+        {
+          "temporadaId": 2,
+          "grupoId": 1,
+          "grupoNome": "A",
+          "rodada": 2,
+          "timeAId": 1,
+          "timeANome": "Godoiense ",
+          "timeBId": 3,
+          "timeBNome": "Pumas ",
+          "status": "FINALIZADO"
+        },
+        {
+          "temporadaId": 2,
+          "grupoId": 1,
+          "grupoNome": "A",
+          "rodada": 2,
+          "timeAId": 4,
+          "timeANome": "Atlântico",
+          "timeBId": 2,
+          "timeBNome": "Caxias ",
+          "status": "FINALIZADO",
+          "vencedorId": 4
+        },
+        {
+          "temporadaId": 2,
+          "grupoId": 1,
+          "grupoNome": "A",
+          "rodada": 3,
+          "timeAId": 1,
+          "timeANome": "Godoiense ",
+          "timeBId": 2,
+          "timeBNome": "Caxias ",
+          "status": "FINALIZADO"
+        },
+        {
+          "temporadaId": 2,
+          "grupoId": 1,
+          "grupoNome": "A",
+          "rodada": 3,
+          "timeAId": 3,
+          "timeANome": "Pumas ",
+          "timeBId": 4,
+          "timeBNome": "Atlântico",
+          "status": "FINALIZADO",
+          "vencedorId": 3
+        },
+        {
+          "temporadaId": 2,
+          "grupoId": 2,
+          "grupoNome": "B",
+          "rodada": 1,
+          "timeAId": 5,
+          "timeANome": "Operário ",
+          "timeBId": 8,
+          "timeBNome": "Xucros ",
+          "status": "FINALIZADO",
+          "vencedorId": 5
+        },
+        {
+          "temporadaId": 2,
+          "grupoId": 2,
+          "grupoNome": "B",
+          "rodada": 1,
+          "timeAId": 6,
+          "timeANome": "Cruzeiro ",
+          "timeBId": 7,
+          "timeBNome": "Vira-Copos",
+          "status": "FINALIZADO",
+          "vencedorId": 7
+        },
+        {
+          "temporadaId": 2,
+          "grupoId": 2,
+          "grupoNome": "B",
+          "rodada": 2,
+          "timeAId": 5,
+          "timeANome": "Operário ",
+          "timeBId": 7,
+          "timeBNome": "Vira-Copos",
+          "status": "FINALIZADO"
+        },
+        {
+          "temporadaId": 2,
+          "grupoId": 2,
+          "grupoNome": "B",
+          "rodada": 2,
+          "timeAId": 8,
+          "timeANome": "Xucros ",
+          "timeBId": 6,
+          "timeBNome": "Cruzeiro ",
+          "status": "FINALIZADO",
+          "vencedorId": 6
+        },
+        {
+          "temporadaId": 2,
+          "grupoId": 2,
+          "grupoNome": "B",
+          "rodada": 3,
+          "timeAId": 5,
+          "timeANome": "Operário ",
+          "timeBId": 6,
+          "timeBNome": "Cruzeiro ",
+          "status": "FINALIZADO",
+          "vencedorId": 6
+        },
+        {
+          "temporadaId": 2,
+          "grupoId": 2,
+          "grupoNome": "B",
+          "rodada": 3,
+          "timeAId": 7,
+          "timeANome": "Vira-Copos",
+          "timeBId": 8,
+          "timeBNome": "Xucros ",
+          "status": "FINALIZADO",
+          "vencedorId": 7
+        }
+      ],
+      "confrontosGerados": [
+        "1-4",
+        "2-3",
+        "1-3",
+        "2-4",
+        "1-2",
+        "3-4",
+        "5-8",
+        "6-7",
+        "5-7",
+        "6-8",
+        "5-6",
+        "7-8"
+      ]
+    },
+    {
+      "temporadaId": 3,
+      "ano": 2028,
+      "partidas": [
+        {
+          "temporadaId": 3,
+          "grupoId": 1,
+          "grupoNome": "A",
+          "rodada": 1,
+          "timeAId": 1,
+          "timeANome": "Godoiense ",
+          "timeBId": 4,
+          "timeBNome": "Atlântico",
+          "status": "FINALIZADO"
+        },
+        {
+          "temporadaId": 3,
+          "grupoId": 1,
+          "grupoNome": "A",
+          "rodada": 1,
+          "timeAId": 2,
+          "timeANome": "Caxias ",
+          "timeBId": 3,
+          "timeBNome": "Pumas ",
+          "status": "FINALIZADO"
+        },
+        {
+          "temporadaId": 3,
+          "grupoId": 1,
+          "grupoNome": "A",
+          "rodada": 2,
+          "timeAId": 1,
+          "timeANome": "Godoiense ",
+          "timeBId": 3,
+          "timeBNome": "Pumas ",
+          "status": "FINALIZADO"
+        },
+        {
+          "temporadaId": 3,
+          "grupoId": 1,
+          "grupoNome": "A",
+          "rodada": 2,
+          "timeAId": 4,
+          "timeANome": "Atlântico",
+          "timeBId": 2,
+          "timeBNome": "Caxias ",
+          "status": "FINALIZADO",
+          "vencedorId": 2
+        },
+        {
+          "temporadaId": 3,
+          "grupoId": 1,
+          "grupoNome": "A",
+          "rodada": 3,
+          "timeAId": 1,
+          "timeANome": "Godoiense ",
+          "timeBId": 2,
+          "timeBNome": "Caxias ",
+          "status": "FINALIZADO"
+        },
+        {
+          "temporadaId": 3,
+          "grupoId": 1,
+          "grupoNome": "A",
+          "rodada": 3,
+          "timeAId": 3,
+          "timeANome": "Pumas ",
+          "timeBId": 4,
+          "timeBNome": "Atlântico",
+          "status": "FINALIZADO",
+          "vencedorId": 4
+        },
+        {
+          "temporadaId": 3,
+          "grupoId": 2,
+          "grupoNome": "B",
+          "rodada": 1,
+          "timeAId": 5,
+          "timeANome": "Operário ",
+          "timeBId": 8,
+          "timeBNome": "Xucros ",
+          "status": "FINALIZADO",
+          "vencedorId": 5
+        },
+        {
+          "temporadaId": 3,
+          "grupoId": 2,
+          "grupoNome": "B",
+          "rodada": 1,
+          "timeAId": 6,
+          "timeANome": "Cruzeiro ",
+          "timeBId": 7,
+          "timeBNome": "Vira-Copos",
+          "status": "FINALIZADO",
+          "vencedorId": 6
+        },
+        {
+          "temporadaId": 3,
+          "grupoId": 2,
+          "grupoNome": "B",
+          "rodada": 2,
+          "timeAId": 5,
+          "timeANome": "Operário ",
+          "timeBId": 7,
+          "timeBNome": "Vira-Copos",
+          "status": "FINALIZADO",
+          "vencedorId": 7
+        },
+        {
+          "temporadaId": 3,
+          "grupoId": 2,
+          "grupoNome": "B",
+          "rodada": 2,
+          "timeAId": 8,
+          "timeANome": "Xucros ",
+          "timeBId": 6,
+          "timeBNome": "Cruzeiro ",
+          "status": "FINALIZADO",
+          "vencedorId": 6
+        },
+        {
+          "temporadaId": 3,
+          "grupoId": 2,
+          "grupoNome": "B",
+          "rodada": 3,
+          "timeAId": 5,
+          "timeANome": "Operário ",
+          "timeBId": 6,
+          "timeBNome": "Cruzeiro ",
+          "status": "FINALIZADO",
+          "vencedorId": 6
+        },
+        {
+          "temporadaId": 3,
+          "grupoId": 2,
+          "grupoNome": "B",
+          "rodada": 3,
+          "timeAId": 7,
+          "timeANome": "Vira-Copos",
+          "timeBId": 8,
+          "timeBNome": "Xucros ",
+          "status": "FINALIZADO",
+          "vencedorId": 7
+        }
+      ],
+      "confrontosGerados": [
+        "1-4",
+        "2-3",
+        "1-3",
+        "2-4",
+        "1-2",
+        "3-4",
+        "5-8",
+        "6-7",
+        "5-7",
+        "6-8",
+        "5-6",
+        "7-8"
+      ]
+    },
+    {
+      "temporadaId": 1,
+      "ano": 2026,
+      "partidas": [
+        {
+          "temporadaId": 1,
+          "grupoId": 1,
+          "grupoNome": "A",
+          "rodada": 1,
+          "timeAId": 1,
+          "timeANome": "Godoiense ",
+          "timeBId": 4,
+          "timeBNome": "Atlântico",
+          "status": "FINALIZADO",
+          "vencedorId": 1
+        },
+        {
+          "temporadaId": 1,
+          "grupoId": 1,
+          "grupoNome": "A",
+          "rodada": 1,
+          "timeAId": 2,
+          "timeANome": "Caxias ",
+          "timeBId": 3,
+          "timeBNome": "Pumas ",
+          "status": "FINALIZADO",
+          "vencedorId": 3
+        },
+        {
+          "temporadaId": 1,
+          "grupoId": 1,
+          "grupoNome": "A",
+          "rodada": 2,
+          "timeAId": 1,
+          "timeANome": "Godoiense ",
+          "timeBId": 3,
+          "timeBNome": "Pumas ",
+          "status": "PENDENTE"
+        },
+        {
+          "temporadaId": 1,
+          "grupoId": 1,
+          "grupoNome": "A",
+          "rodada": 2,
+          "timeAId": 4,
+          "timeANome": "Atlântico",
+          "timeBId": 2,
+          "timeBNome": "Caxias ",
+          "status": "PENDENTE"
+        },
+        {
+          "temporadaId": 1,
+          "grupoId": 1,
+          "grupoNome": "A",
+          "rodada": 3,
+          "timeAId": 1,
+          "timeANome": "Godoiense ",
+          "timeBId": 2,
+          "timeBNome": "Caxias ",
+          "status": "PENDENTE"
+        },
+        {
+          "temporadaId": 1,
+          "grupoId": 1,
+          "grupoNome": "A",
+          "rodada": 3,
+          "timeAId": 3,
+          "timeANome": "Pumas ",
+          "timeBId": 4,
+          "timeBNome": "Atlântico",
+          "status": "PENDENTE"
+        },
+        {
+          "temporadaId": 1,
+          "grupoId": 2,
+          "grupoNome": "B",
+          "rodada": 1,
+          "timeAId": 5,
+          "timeANome": "Operário ",
+          "timeBId": 8,
+          "timeBNome": "Xucros ",
+          "status": "FINALIZADO",
+          "vencedorId": 5
+        },
+        {
+          "temporadaId": 1,
+          "grupoId": 2,
+          "grupoNome": "B",
+          "rodada": 1,
+          "timeAId": 6,
+          "timeANome": "Cruzeiro ",
+          "timeBId": 7,
+          "timeBNome": "Vira-Copos",
+          "status": "FINALIZADO",
+          "vencedorId": 6
+        },
+        {
+          "temporadaId": 1,
+          "grupoId": 2,
+          "grupoNome": "B",
+          "rodada": 2,
+          "timeAId": 5,
+          "timeANome": "Operário ",
+          "timeBId": 7,
+          "timeBNome": "Vira-Copos",
+          "status": "PENDENTE"
+        },
+        {
+          "temporadaId": 1,
+          "grupoId": 2,
+          "grupoNome": "B",
+          "rodada": 2,
+          "timeAId": 8,
+          "timeANome": "Xucros ",
+          "timeBId": 6,
+          "timeBNome": "Cruzeiro ",
+          "status": "PENDENTE"
+        },
+        {
+          "temporadaId": 1,
+          "grupoId": 2,
+          "grupoNome": "B",
+          "rodada": 3,
+          "timeAId": 5,
+          "timeANome": "Operário ",
+          "timeBId": 6,
+          "timeBNome": "Cruzeiro ",
+          "status": "PENDENTE"
+        },
+        {
+          "temporadaId": 1,
+          "grupoId": 2,
+          "grupoNome": "B",
+          "rodada": 3,
+          "timeAId": 7,
+          "timeANome": "Vira-Copos",
+          "timeBId": 8,
+          "timeBNome": "Xucros ",
+          "status": "PENDENTE"
+        }
+      ],
+      "confrontosGerados": [
+        "1-4",
+        "2-3",
+        "1-3",
+        "2-4",
+        "1-2",
+        "3-4",
+        "5-8",
+        "6-7",
+        "5-7",
+        "6-8",
+        "5-6",
+        "7-8"
+      ]
+    }
+  ]
+}
