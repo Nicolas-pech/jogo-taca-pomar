@@ -24,7 +24,7 @@ import service.IniciarDisputa;
  *
  * @author Escola João XXIII
  */
-public class Class extends javax.swing.JFrame {
+public class Classificacao01 extends javax.swing.JFrame {
 
     JLabel jlTime1 = new JLabel();
     JLabel jl8 = new JLabel();
@@ -59,7 +59,7 @@ public class Class extends javax.swing.JFrame {
     
     String meuTime = new String();
 
-    public Class(List<Time> timesGrupoA, List<Time> timesGrupoB, String meuTime) {
+    public Classificacao01(List<Time> timesGrupoA, List<Time> timesGrupoB, String meuTime) {
         this.meuTime = meuTime;
         
         iniciarLabeltime(225, 140, jlTime1, "jogar", "");

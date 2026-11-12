@@ -121,7 +121,7 @@ public class RodadasService {
     }
 
     private void salvarRodadas(RodadasDados rodadasDados) {
-        new TelaClassificacaoUI().setVisible(true);
+//        new Classificacao01().setVisible(true);
         try {
             arquivoRodadas.salvar(rodadasDados);
         } catch (IOException e) {

@@ -89,7 +89,7 @@ public class Jogo extends javax.swing.JFrame {
             @Override
             public void mouseClicked(MouseEvent e) {
                 dispose();
-                new Class(timesGrupoA, timesGrupoB, "Godoiense ").setVisible(true);
+                new Classificacao01(timesGrupoA, timesGrupoB, "Godoiense ").setVisible(true);
             }
         });
     }
