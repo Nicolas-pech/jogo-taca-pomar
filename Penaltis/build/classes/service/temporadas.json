@@ -13,9 +13,110 @@
               "id": 1,
               "nome": "Godoiense ",
               "forca": 9,
-              "pontos": 4,
-              "jogos": 2,
+              "pontos": 5,
+              "jogos": 3,
               "vitorias": 1,
+              "empates": 2,
+              "derrotas": 0
+            },
+            {
+              "id": 2,
+              "nome": "Caxias ",
+              "forca": 11,
+              "pontos": 4,
+              "jogos": 3,
+              "vitorias": 1,
+              "empates": 1,
+              "derrotas": 1
+            },
+            {
+              "id": 3,
+              "nome": "Pumas ",
+              "forca": 8,
+              "pontos": 3,
+              "jogos": 3,
+              "vitorias": 1,
+              "empates": 0,
+              "derrotas": 2
+            },
+            {
+              "id": 4,
+              "nome": "Atlântico",
+              "forca": 5,
+              "pontos": 4,
+              "jogos": 3,
+              "vitorias": 1,
+              "empates": 1,
+              "derrotas": 1
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "nome": "B",
+          "times": [
+            {
+              "id": 5,
+              "nome": "Operário ",
+              "forca": 9,
+              "pontos": 4,
+              "jogos": 3,
+              "vitorias": 1,
+              "empates": 1,
+              "derrotas": 1
+            },
+            {
+              "id": 6,
+              "nome": "Cruzeiro ",
+              "forca": 13,
+              "pontos": 9,
+              "jogos": 3,
+              "vitorias": 3,
+              "empates": 0,
+              "derrotas": 0
+            },
+            {
+              "id": 7,
+              "nome": "Vira-Copos",
+              "forca": 5,
+              "pontos": 2,
+              "jogos": 3,
+              "vitorias": 0,
+              "empates": 2,
+              "derrotas": 1
+            },
+            {
+              "id": 8,
+              "nome": "Xucros ",
+              "forca": 5,
+              "pontos": 1,
+              "jogos": 3,
+              "vitorias": 0,
+              "empates": 1,
+              "derrotas": 2
+            }
+          ]
+        }
+      ],
+      "rodada": 3,
+      "ativa": false
+    },
+    {
+      "id": 2,
+      "ano": 2027,
+      "nome": "Campeonato 2027",
+      "grupos": [
+        {
+          "id": 1,
+          "nome": "A",
+          "times": [
+            {
+              "id": 1,
+              "nome": "Godoiense ",
+              "forca": 9,
+              "pontos": 1,
+              "jogos": 1,
+              "vitorias": 0,
               "empates": 1,
               "derrotas": 0
             },
@@ -23,29 +124,29 @@
               "id": 2,
               "nome": "Caxias ",
               "forca": 11,
-              "pontos": 3,
-              "jogos": 2,
-              "vitorias": 1,
-              "empates": 0,
-              "derrotas": 1
+              "pontos": 1,
+              "jogos": 1,
+              "vitorias": 0,
+              "empates": 1,
+              "derrotas": 0
             },
             {
               "id": 3,
               "nome": "Pumas ",
-              "forca": 7,
-              "pontos": 0,
-              "jogos": 2,
+              "forca": 8,
+              "pontos": 1,
+              "jogos": 1,
               "vitorias": 0,
-              "empates": 0,
-              "derrotas": 2
+              "empates": 1,
+              "derrotas": 0
             },
             {
               "id": 4,
               "nome": "Atlântico",
-              "forca": 6,
-              "pontos": 4,
-              "jogos": 2,
-              "vitorias": 1,
+              "forca": 5,
+              "pontos": 1,
+              "jogos": 1,
+              "vitorias": 0,
               "empates": 1,
               "derrotas": 0
             }
@@ -59,46 +160,46 @@
               "id": 5,
               "nome": "Operário ",
               "forca": 10,
-              "pontos": 4,
-              "jogos": 2,
+              "pontos": 3,
+              "jogos": 1,
               "vitorias": 1,
-              "empates": 1,
+              "empates": 0,
               "derrotas": 0
             },
             {
               "id": 6,
               "nome": "Cruzeiro ",
-              "forca": 12,
-              "pontos": 6,
-              "jogos": 2,
-              "vitorias": 2,
+              "forca": 14,
+              "pontos": 3,
+              "jogos": 1,
+              "vitorias": 1,
               "empates": 0,
               "derrotas": 0
             },
             {
               "id": 7,
               "nome": "Vira-Copos",
-              "forca": 5,
-              "pontos": 1,
-              "jogos": 2,
+              "forca": 4,
+              "pontos": 0,
+              "jogos": 1,
               "vitorias": 0,
-              "empates": 1,
+              "empates": 0,
               "derrotas": 1
             },
             {
               "id": 8,
               "nome": "Xucros ",
-              "forca": 5,
+              "forca": 4,
               "pontos": 0,
-              "jogos": 2,
+              "jogos": 1,
               "vitorias": 0,
               "empates": 0,
-              "derrotas": 2
+              "derrotas": 1
             }
           ]
         }
       ],
-      "rodada": 2,
+      "rodada": 1,
       "ativa": true
     }
   ]

@@ -1,5 +1,6 @@
 package service;
 
+import inicio.Classificacao01;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -121,7 +122,7 @@ public class RodadasService {
     }
 
     private void salvarRodadas(RodadasDados rodadasDados) {
-//        new Classificacao01().setVisible(true);
+        new Classificacao01("Godoiense ").setVisible(true);
         try {
             arquivoRodadas.salvar(rodadasDados);
         } catch (IOException e) {

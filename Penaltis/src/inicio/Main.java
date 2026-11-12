@@ -1,3 +1,5 @@
+package inicio;
+
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 import tela.GamePanel;

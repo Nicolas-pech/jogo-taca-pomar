@@ -1,3 +1,5 @@
+package inicio;
+
 
 import java.awt.Color;
 import java.awt.Cursor;
@@ -12,6 +14,8 @@ import java.util.Comparator;
 import java.util.stream.Collectors;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
+import service.Dados;
+import service.DadosService;
 import service.IniciarDisputa;
 
 
@@ -59,7 +63,10 @@ public class Classificacao01 extends javax.swing.JFrame {
     
     String meuTime = new String();
 
-    public Classificacao01(List<Time> timesGrupoA, List<Time> timesGrupoB, String meuTime) {
+    public Classificacao01(String meuTime) {
+        
+        List<Time> timesGrupoA = buscarGrupoA();
+        List<Time> timesGrupoB = buscarGrupoB();
         this.meuTime = meuTime;
         
         iniciarLabeltime(225, 140, jlTime1, "jogar", "");
@@ -173,6 +180,21 @@ public class Classificacao01 extends javax.swing.JFrame {
         jl8.setText(" " + timesGrupoB.get(3).getNome() + " | PTS: " + timesGrupoB.get(3).getPontos());
 
     }
+    
+     private List<Time> buscarGrupoA() {
+        DadosService dadosService = new DadosService();
+        Dados dados = dadosService.lerDados();
+        return dados.getTemporadas().get(0).getGrupos().get(0).getTimes();
+
+    }
+
+    private List<Time> buscarGrupoB() {
+        DadosService dadosService = new DadosService();
+        Dados dados = dadosService.lerDados();
+        return dados.getTemporadas().get(0).getGrupos().get(1).getTimes();
+
+    }
+
 
     /**
      * This method is called from within the constructor to initialize the form.

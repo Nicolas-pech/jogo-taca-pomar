@@ -1,3 +1,5 @@
+package inicio;
+
 
 import java.awt.Color;
 import java.awt.Cursor;
@@ -89,7 +91,7 @@ public class Jogo extends javax.swing.JFrame {
             @Override
             public void mouseClicked(MouseEvent e) {
                 dispose();
-                new Classificacao01(timesGrupoA, timesGrupoB, "Godoiense ").setVisible(true);
+                new Classificacao01("Godoiense ").setVisible(true);
             }
         });
     }
