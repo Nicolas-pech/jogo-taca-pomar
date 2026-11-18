@@ -7,6 +7,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
+import service.DadosService;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -24,6 +25,7 @@ public class TacaPomar extends javax.swing.JFrame {
      */
     JLabel jljogar = new JLabel();
     JLabel jlcomo = new JLabel();
+    private final DadosService dadosService = new DadosService();
     public TacaPomar() {
         iniciarLabel(160,375,jljogar,"jogar");
         this.add(jljogar);
@@ -53,7 +55,12 @@ public class TacaPomar extends javax.swing.JFrame {
             @Override
             public void mouseClicked(MouseEvent e) {
                 if (op.equals("jogar")){
+                    String timeEscolhido = dadosService.buscarNomeTimeEscolhido();
                     dispose();
+                    if (timeEscolhido != null) {
+                        new Classificacao01(timeEscolhido).setVisible(true);
+                        return;
+                    }
                     new Jogo().setVisible(true);
                 }
             }

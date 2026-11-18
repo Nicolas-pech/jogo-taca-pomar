@@ -53,7 +53,7 @@ public class RodadasService {
 
         if (temporadaEncerrada(temporadaRodadas)) {
             abrirNovaTemporada(dados, temporadaAtiva);
-            salvarRodadas(rodadasDados);
+            salvarRodadas(rodadasDados, meuTime);
             dadosService.salvarDados(dados);
             return;
         }
@@ -69,7 +69,7 @@ public class RodadasService {
                 abrirNovaTemporada(dados, temporadaAtiva);
                 dadosService.salvarDados(dados);
             }
-            salvarRodadas(rodadasDados);
+            salvarRodadas(rodadasDados, meuTime);
             return;
         }
 
@@ -99,7 +99,7 @@ public class RodadasService {
             abrirNovaTemporada(dados, temporadaAtiva);
         }
 
-        salvarRodadas(rodadasDados);
+        salvarRodadas(rodadasDados, meuTime);
         dadosService.salvarDados(dados);
     }
 
@@ -121,13 +121,23 @@ public class RodadasService {
         }
     }
 
-    private void salvarRodadas(RodadasDados rodadasDados) {
-        new Classificacao01("Godoiense ").setVisible(true);
+    private void salvarRodadas(RodadasDados rodadasDados, String meuTime) {
+        String timeEscolhido = resolverTimeEscolhido(meuTime);
+        if (timeEscolhido != null) {
+            new Classificacao01(timeEscolhido).setVisible(true);
+        }
         try {
             arquivoRodadas.salvar(rodadasDados);
         } catch (IOException e) {
             throw new RuntimeException("Erro ao salvar rodadas.json", e);
         }
+    }
+
+    private String resolverTimeEscolhido(String meuTime) {
+        if (meuTime != null && !meuTime.trim().isEmpty()) {
+            return meuTime.trim();
+        }
+        return dadosService.buscarNomeTimeEscolhido();
     }
 
     private TemporadaRodadas obterOuCriarTemporadaRodadas(RodadasDados rodadasDados, Temporada temporada) {

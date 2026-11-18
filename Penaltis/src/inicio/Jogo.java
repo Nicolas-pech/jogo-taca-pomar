@@ -9,7 +9,6 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import java.util.List;
-import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import service.Dados;
 import service.DadosService;
@@ -38,35 +37,36 @@ public class Jogo extends javax.swing.JFrame {
 
     List<Time> timesGrupoA = new ArrayList();
     List<Time> timesGrupoB = new ArrayList();
+    private final DadosService dadosService = new DadosService();
 
     public Jogo() {
-        iniciarLabel(55, 450, jlretornar, "jogar", "");
+        iniciarLabel(55, 450, jlretornar, "", null);
         this.add(jlretornar);
         timesGrupoA = buscarGrupoA();
         timesGrupoB = buscarGrupoB();
 
         System.out.println(timesGrupoA.size());
-        iniciarLabel(125, 122, jlG, "jogar", "           " + timesGrupoA.get(0).getNome() + "- Força: " + timesGrupoA.get(0).getForca());
+        iniciarLabel(125, 122, jlG, "           " + timesGrupoA.get(0).getNome() + "- Força: " + timesGrupoA.get(0).getForca(), timesGrupoA.get(0).getNome());
         this.add(jlG);
-        iniciarLabel(125, 202, jlCai, "jogar", "           " + timesGrupoA.get(1).getNome() + "- Força: " + timesGrupoA.get(1).getForca());
+        iniciarLabel(125, 202, jlCai, "           " + timesGrupoA.get(1).getNome() + "- Força: " + timesGrupoA.get(1).getForca(), timesGrupoA.get(1).getNome());
         this.add(jlCai);
-        iniciarLabel(125, 277, jlP, "jogar", "           " + timesGrupoA.get(2).getNome() + "- Força: " + timesGrupoA.get(2).getForca());
+        iniciarLabel(125, 277, jlP, "           " + timesGrupoA.get(2).getNome() + "- Força: " + timesGrupoA.get(2).getForca(), timesGrupoA.get(2).getNome());
         this.add(jlP);
-        iniciarLabel(125, 355, jlA, "jogar", "           " + timesGrupoA.get(3).getNome() + "- Força: " + timesGrupoA.get(3).getForca());
+        iniciarLabel(125, 355, jlA, "           " + timesGrupoA.get(3).getNome() + "- Força: " + timesGrupoA.get(3).getForca(), timesGrupoA.get(3).getNome());
         this.add(jlA);
-        iniciarLabel(495, 122, jlO, "jogar", "           " + timesGrupoB.get(0).getNome() + "- Força: " + timesGrupoB.get(0).getForca());
+        iniciarLabel(495, 122, jlO, "           " + timesGrupoB.get(0).getNome() + "- Força: " + timesGrupoB.get(0).getForca(), timesGrupoB.get(0).getNome());
         this.add(jlO);
-        iniciarLabel(495, 202, jlC, "jogar", "           " + timesGrupoB.get(1).getNome() + "- Força: " + timesGrupoB.get(1).getForca());
+        iniciarLabel(495, 202, jlC, "           " + timesGrupoB.get(1).getNome() + "- Força: " + timesGrupoB.get(1).getForca(), timesGrupoB.get(1).getNome());
         this.add(jlC);
-        iniciarLabel(495, 277, jlV, "jogar", "          " + timesGrupoB.get(2).getNome() + "- Força: " + timesGrupoB.get(2).getForca());
+        iniciarLabel(495, 277, jlV, "          " + timesGrupoB.get(2).getNome() + "- Força: " + timesGrupoB.get(2).getForca(), timesGrupoB.get(2).getNome());
         this.add(jlV);
-        iniciarLabel(495, 355, jlX, "jogar", "           " + timesGrupoB.get(3).getNome() + "- Força: " + timesGrupoB.get(3).getForca());
+        iniciarLabel(495, 355, jlX, "           " + timesGrupoB.get(3).getNome() + "- Força: " + timesGrupoB.get(3).getForca(), timesGrupoB.get(3).getNome());
         this.add(jlX);
         initComponents();
         this.setLocationRelativeTo(null);
     }
 
-    public void iniciarLabel(int x, int y, JLabel label, String op, String texto) {
+    public void iniciarLabel(int x, int y, JLabel label, String texto, String nomeTime) {
         label.setText(texto);
         //label.setBorder(BorderFactory.createLineBorder(Color.yellow, 2));
         label.setOpaque(false);
@@ -90,8 +90,12 @@ public class Jogo extends javax.swing.JFrame {
 
             @Override
             public void mouseClicked(MouseEvent e) {
+                if (nomeTime == null || nomeTime.trim().isEmpty()) {
+                    return;
+                }
+                String timeEscolhido = dadosService.salvarTimeEscolhidoSeAusente(nomeTime);
                 dispose();
-                new Classificacao01("Godoiense ").setVisible(true);
+                new Classificacao01(timeEscolhido).setVisible(true);
             }
         });
     }
