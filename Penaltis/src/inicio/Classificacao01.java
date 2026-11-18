@@ -4,6 +4,7 @@ package inicio;
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Font;
+import java.awt.Image;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.IOException;
@@ -13,6 +14,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.nio.file.StandardOpenOption;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JLabel;
@@ -60,15 +62,6 @@ public class Classificacao01 extends javax.swing.JFrame {
     JLabel jlEscudoTime8 = new JLabel();
     JLabel jlEscudoTime9 = new JLabel();
 
-    ImageIcon godoiense = new ImageIcon(getClass().getResource("/imagens/godoiense.png"));
-    ImageIcon pumas = new ImageIcon(getClass().getResource("/imagens/pumas.png"));
-    ImageIcon atlantico = new ImageIcon(getClass().getResource("/imagens/atlantico.png"));
-    ImageIcon caxias = new ImageIcon(getClass().getResource("/imagens/caxias.png"));
-    ImageIcon operario = new ImageIcon(getClass().getResource("/imagens/operario.png"));
-    ImageIcon cruzeiro = new ImageIcon(getClass().getResource("/imagens/cruzeiro.png"));
-    ImageIcon vira = new ImageIcon(getClass().getResource("/imagens/vira.png"));
-    ImageIcon xucros = new ImageIcon(getClass().getResource("/imagens/xucros.png"));
-    
     String meuTime = new String();
 
     public Classificacao01(String meuTime) {
@@ -165,8 +158,15 @@ public class Classificacao01 extends javax.swing.JFrame {
 
             @Override
             public void mouseClicked(MouseEvent e) {
-                dispose();
-                new IniciarDisputa(meuTime);
+                if(op.equals("Avancar")){
+                    dispose();
+                    new IniciarDisputa(meuTime);
+                }
+                if(op.equals("Resetar")){
+                    dispose();
+                    resetarJogo();
+                }
+
             }
         });
     }
@@ -189,6 +189,29 @@ public class Classificacao01 extends javax.swing.JFrame {
         jl7.setText(" " + timesGrupoB.get(2).getNome() + " | PTS: " + timesGrupoB.get(2).getPontos());
         jl8.setText(" " + timesGrupoB.get(3).getNome() + " | PTS: " + timesGrupoB.get(3).getPontos());
 
+        jlEscudoTime1.setIcon(criarIconeEscudo(timesGrupoA.get(0)));
+        jlEscudoTime2.setIcon(criarIconeEscudo(timesGrupoA.get(1)));
+        jlEscudoTime3.setIcon(criarIconeEscudo(timesGrupoA.get(2)));
+        jlEscudoTime4.setIcon(criarIconeEscudo(timesGrupoA.get(3)));
+        jlEscudoTime5.setIcon(criarIconeEscudo(timesGrupoB.get(0)));
+        jlEscudoTime6.setIcon(criarIconeEscudo(timesGrupoB.get(1)));
+        jlEscudoTime7.setIcon(criarIconeEscudo(timesGrupoB.get(2)));
+        jlEscudoTime8.setIcon(criarIconeEscudo(timesGrupoB.get(3)));
+
+    }
+
+    private ImageIcon criarIconeEscudo(Time time) {
+        if (time == null || time.getEscudo() == null || time.getEscudo().trim().isEmpty()) {
+            return null;
+        }
+
+        URL recursoEscudo = getClass().getResource("/imagens/" + time.getEscudo().trim());
+        if (recursoEscudo == null) {
+            return null;
+        }
+        ImageIcon iconeOriginal = new ImageIcon(recursoEscudo);
+        Image imagemRedimensionada = iconeOriginal.getImage().getScaledInstance(50, 50, Image.SCALE_SMOOTH);
+        return new ImageIcon(imagemRedimensionada);
     }
     
      private List<Time> buscarGrupoA() {

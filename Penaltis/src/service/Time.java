@@ -10,6 +10,7 @@ public class Time {
     private int vitorias;
     private int empates;
     private int derrotas;
+    private String escudo;
     
 
     public Time() {
@@ -82,6 +83,14 @@ public class Time {
 
     public void setForca(int forca) {
         this.forca = forca;
+    }
+
+    public String getEscudo() {
+        return escudo;
+    }
+
+    public void setEscudo(String escudo) {
+        this.escudo = escudo;
     }
 
 }
