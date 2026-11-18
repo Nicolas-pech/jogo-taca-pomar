@@ -6,6 +6,13 @@ import java.awt.Cursor;
 import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
+import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JLabel;
@@ -193,6 +200,38 @@ public class Classificacao01 extends javax.swing.JFrame {
         Dados dados = dadosService.lerDados();
         return dados.getTemporadas().get(0).getGrupos().get(1).getTimes();
 
+    }
+
+    public void resetarJogo() {
+        try {
+            sobrescreverComObjetoVazio("src/service/time-usuario.json");
+            sobrescreverComObjetoVazio("src/service/rodadas.json");
+
+            Path origemTemporadas = Paths.get("src/service/temporadas_inicial.json");
+            Path destinoTemporadas = Paths.get("src/service/temporadas.json");
+            Files.copy(origemTemporadas, destinoTemporadas, StandardCopyOption.REPLACE_EXISTING);
+        } catch (IOException e) {
+            throw new RuntimeException("Erro ao resetar os dados do jogo.", e);
+        }
+
+        dispose();
+        new Jogo().setVisible(true);
+    }
+
+    private void sobrescreverComObjetoVazio(String caminhoArquivo) throws IOException {
+        Path arquivo = Paths.get(caminhoArquivo);
+        Path diretorio = arquivo.getParent();
+        if (diretorio != null) {
+            Files.createDirectories(diretorio);
+        }
+
+        Files.write(
+                arquivo,
+                "{}".getBytes(StandardCharsets.UTF_8),
+                StandardOpenOption.CREATE,
+                StandardOpenOption.TRUNCATE_EXISTING,
+                StandardOpenOption.WRITE
+        );
     }
 
 
