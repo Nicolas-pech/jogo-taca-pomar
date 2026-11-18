@@ -46,6 +46,7 @@ public class Classificacao01 extends javax.swing.JFrame {
     JLabel jl7 = new JLabel();
     JLabel jl5 = new JLabel();
     JLabel jl2 = new JLabel();
+    JLabel jl10 = new JLabel();
     List<Time> timesGrupoA = new ArrayList();
     List<Time> timesGrupoB = new ArrayList();
 
@@ -94,6 +95,8 @@ public class Classificacao01 extends javax.swing.JFrame {
         this.add(jl8);
         iniciarLabelAvancar(720, 455, jl9, "Avançar", "");
         this.add(jl9);
+        iniciarLabelAvancar(95, 455, jl9, "Resetar", "");
+        this.add(jl10);
 
         iniciarLabelEscudo(165, 140, jlEscudoTime1, "jogar", "");
         this.add(jlEscudoTime1);
@@ -248,7 +251,7 @@ public class Classificacao01 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Taça pomar - Jogo.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/taca_classificacao.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
