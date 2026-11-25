@@ -29,15 +29,15 @@ public class TacaPomar extends javax.swing.JFrame {
     public TacaPomar() {
         iniciarLabel(160,375,jljogar,"jogar");
         this.add(jljogar);
-        iniciarLabel(495,375,jlcomo,"jogar");
+        iniciarLabel(495,375,jlcomo,"como");
         this.add(jlcomo);
         initComponents();
         this.setLocationRelativeTo(null);
     }
 
     public void iniciarLabel(int x, int y, JLabel label,String op) {
-        label.setText("teste");
-        label.setBorder(BorderFactory.createLineBorder(Color.yellow,2));
+        
+        
         label.setOpaque(false);
         label.setBounds(x, y, 270, 50);
         label.addMouseListener(new MouseAdapter() {
@@ -54,6 +54,9 @@ public class TacaPomar extends javax.swing.JFrame {
 
             @Override
             public void mouseClicked(MouseEvent e) {
+                if (op.equals("como")){
+                    new Comojogar().setVisible(true);
+                }
                 if (op.equals("jogar")){
                     String timeEscolhido = dadosService.buscarNomeTimeEscolhido();
                     dispose();

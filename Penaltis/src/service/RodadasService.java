@@ -53,8 +53,8 @@ public class RodadasService {
 
         if (temporadaEncerrada(temporadaRodadas)) {
             abrirNovaTemporada(dados, temporadaAtiva);
-            salvarRodadas(rodadasDados, meuTime);
             dadosService.salvarDados(dados);
+            salvarRodadas(rodadasDados, meuTime);
             return;
         }
 
@@ -99,8 +99,8 @@ public class RodadasService {
             abrirNovaTemporada(dados, temporadaAtiva);
         }
 
-        salvarRodadas(rodadasDados, meuTime);
         dadosService.salvarDados(dados);
+        salvarRodadas(rodadasDados, meuTime);
     }
 
     private Temporada buscarTemporadaAtiva(List<Temporada> temporadas) {
@@ -122,12 +122,13 @@ public class RodadasService {
     }
 
     private void salvarRodadas(RodadasDados rodadasDados, String meuTime) {
-        String timeEscolhido = resolverTimeEscolhido(meuTime);
-        if (timeEscolhido != null) {
-            new Classificacao01(timeEscolhido).setVisible(true);
-        }
+
         try {
             arquivoRodadas.salvar(rodadasDados);
+            String timeEscolhido = resolverTimeEscolhido(meuTime);
+            if (timeEscolhido != null) {
+                new Classificacao01(timeEscolhido).setVisible(true);
+            }
         } catch (IOException e) {
             throw new RuntimeException("Erro ao salvar rodadas.json", e);
         }

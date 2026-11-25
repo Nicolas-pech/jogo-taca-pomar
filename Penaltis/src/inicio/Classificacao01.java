@@ -88,7 +88,7 @@ public class Classificacao01 extends javax.swing.JFrame {
         this.add(jl8);
         iniciarLabelAvancar(720, 455, jl9, "Avançar", "");
         this.add(jl9);
-        iniciarLabelAvancar(95, 455, jl9, "Resetar", "");
+        iniciarLabelAvancar(95, 455, jl10, "Resetar", "");
         this.add(jl10);
 
         iniciarLabelEscudo(165, 140, jlEscudoTime1, "jogar", "");
@@ -121,7 +121,7 @@ public class Classificacao01 extends javax.swing.JFrame {
 
     public void iniciarLabelEscudo(int x, int y, JLabel label, String op, String texto) {
         label.setText(texto);
-        label.setBorder(BorderFactory.createLineBorder(Color.yellow, 2));
+        
         label.setOpaque(false);
         label.setBounds(x, y, 60, 60);
         label.setFont(new Font("Segoe UI", Font.BOLD, 20));
@@ -130,7 +130,7 @@ public class Classificacao01 extends javax.swing.JFrame {
 
     public void iniciarLabeltime(int x, int y, JLabel label, String op, String texto) {
         label.setText(texto);
-        label.setBorder(BorderFactory.createLineBorder(Color.yellow, 2));
+        
         label.setOpaque(false);
         label.setBounds(x, y, 200, 60);
         label.setFont(new Font("Segoe UI", Font.BOLD, 20));
@@ -139,7 +139,7 @@ public class Classificacao01 extends javax.swing.JFrame {
 
     public void iniciarLabelAvancar(int x, int y, JLabel label, String op, String texto) {
         label.setText(texto);
-        //label.setBorder(BorderFactory.createLineBorder(Color.yellow, 2));
+        
         label.setOpaque(false);
         label.setBounds(x, y, 260, 60);
         label.setFont(new Font("Segoe UI", Font.BOLD, 20));
@@ -158,7 +158,7 @@ public class Classificacao01 extends javax.swing.JFrame {
 
             @Override
             public void mouseClicked(MouseEvent e) {
-                if(op.equals("Avancar")){
+                if(op.equals("Avançar")){
                     dispose();
                     new IniciarDisputa(meuTime);
                 }

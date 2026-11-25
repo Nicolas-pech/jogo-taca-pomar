@@ -12,46 +12,46 @@
             {
               "id": 1,
               "nome": "Godoiense ",
-              "escudo":"godoiense.png",
-              "forca": 8,
+              "forca": 7,
               "pontos": 0,
-              "jogos": 0,
+              "jogos": 1,
               "vitorias": 0,
               "empates": 0,
-              "derrotas": 0
+              "derrotas": 1,
+              "escudo": "godoiense.png"
             },
             {
               "id": 2,
               "nome": "Caxias ",
-              "escudo":"caxias.png",
-              "forca": 11,
-              "pontos": 0,
-              "jogos": 0,
-              "vitorias": 0,
+              "forca": 12,
+              "pontos": 3,
+              "jogos": 1,
+              "vitorias": 1,
               "empates": 0,
-              "derrotas": 0
+              "derrotas": 0,
+              "escudo": "caxias.png"
             },
             {
               "id": 3,
               "nome": "Pumas ",
-              "escudo":"pumas.png",
-              "forca": 9,
+              "forca": 8,
               "pontos": 0,
-              "jogos": 0,
+              "jogos": 1,
               "vitorias": 0,
               "empates": 0,
-              "derrotas": 0
+              "derrotas": 1,
+              "escudo": "pumas.png"
             },
             {
               "id": 4,
               "nome": "Atlântico",
-              "escudo":"atlantico.png",
-              "forca": 5,
-              "pontos": 0,
-              "jogos": 0,
-              "vitorias": 0,
+              "forca": 6,
+              "pontos": 3,
+              "jogos": 1,
+              "vitorias": 1,
               "empates": 0,
-              "derrotas": 0
+              "derrotas": 0,
+              "escudo": "atlantico.png"
             }
           ]
         },
@@ -62,51 +62,51 @@
             {
               "id": 5,
               "nome": "Operário ",
-              "escudo":"operario.png",
-              "forca": 9,
-              "pontos": 0,
-              "jogos": 0,
-              "vitorias": 0,
+              "forca": 10,
+              "pontos": 3,
+              "jogos": 1,
+              "vitorias": 1,
               "empates": 0,
-              "derrotas": 0
+              "derrotas": 0,
+              "escudo": "operario.png"
             },
             {
               "id": 6,
               "nome": "Cruzeiro ",
-              "escudo":"cruzeiro.png",
-              "forca": 10,
+              "forca": 9,
               "pontos": 0,
-              "jogos": 0,
+              "jogos": 1,
               "vitorias": 0,
               "empates": 0,
-              "derrotas": 0
+              "derrotas": 1,
+              "escudo": "cruzeiro.png"
             },
             {
               "id": 7,
               "nome": "Vira-Copos",
-              "escudo":"vira.png",
-              "forca": 6,
-              "pontos": 0,
-              "jogos": 0,
-              "vitorias": 0,
+              "forca": 7,
+              "pontos": 3,
+              "jogos": 1,
+              "vitorias": 1,
               "empates": 0,
-              "derrotas": 0
+              "derrotas": 0,
+              "escudo": "vira.png"
             },
             {
               "id": 8,
               "nome": "Xucros ",
-              "escudo":"xucros.png",
-              "forca": 7,
+              "forca": 6,
               "pontos": 0,
-              "jogos": 0,
+              "jogos": 1,
               "vitorias": 0,
               "empates": 0,
-              "derrotas": 0
+              "derrotas": 1,
+              "escudo": "xucros.png"
             }
           ]
         }
       ],
-      "rodada": 0,
+      "rodada": 1,
       "ativa": true
     }
   ]
